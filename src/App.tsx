@@ -18,6 +18,7 @@ import jobHire2 from "./assets/jobhire2.png";
 import jobHire3 from "./assets/jobhire3.png";
 import jobHire4 from "./assets/jobhire4.png";
 import zwallet from "./assets/zwallet.png";
+import zwallet1 from "./assets/zwallet1.png";
 import zwallet2 from "./assets/zwallet2.png";
 import zwallet3 from "./assets/zwallet3.png";
 import olahx from "./assets/olahx.png";
@@ -86,7 +87,7 @@ export default function PortfolioResume() {
       description:
         "WalletApp is a financial management and digital wallet application built using Next.js, Express.js, and MySQL. The application enables users to securely send and receive funds, manage their wallet balance, and view detailed transaction histories in real time. The system is designed with a user-friendly interface and a structured backend architecture, implementing RESTful APIs to handle financial transactions efficiently and securely. WalletApp demonstrates full-stack development capabilities, including frontend development with Next.js, backend API development with Express.js, and relational database management using MySQL. GitHub: https://github.com/mrfachri19/Zwallet",
       thumbnail: zwallet,
-      images: [zwallet, zwallet2, zwallet3],
+      images: [zwallet, zwallet1, zwallet2, zwallet3],
     },
     {
       name: "Market Place Olahx",
