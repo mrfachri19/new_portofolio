@@ -12,21 +12,6 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import logo from "./assets/logo.png";
-import jobHire1 from "./assets/jobhire-login.png";
-import jobHire2 from "./assets/jobhire2.png";
-import jobHire3 from "./assets/jobhire3.png";
-import jobHire4 from "./assets/jobhire4.png";
-import zwallet from "./assets/zwallet.png";
-import zwallet1 from "./assets/zwallet1.png";
-import zwallet2 from "./assets/zwallet2.png";
-import zwallet3 from "./assets/zwallet3.png";
-import olahx from "./assets/olahx.png";
-import stayease from "./assets/stayease.png";
-import filo from "./assets/filo.jpeg";
-import filo1 from "./assets/filo1.jpeg";
-import filo2 from "./assets/filo2.jpeg";
-import filo3 from "./assets/filo3.jpeg";
 
 export default function PortfolioResume() {
   const [activeTab, setActiveTab] = useState("about");
@@ -76,42 +61,52 @@ export default function PortfolioResume() {
     {
       name: "Job Hire",
       tech: "React, Express, Mysql",
-      description:
-        "Job Hire is a web-based recruitment and workforce management platform built using React for the frontend, Express.js for the backend, and MySQL as the primary database. The platform is designed to connect recruiters and workers through a structured and efficient hiring process.The application supports two main user roles: Recruiter and Worker, each with dedicated features and workflows. Recruiters can post job listings, manage applicants, and track recruitment progress, while workers can browse job opportunities, submit applications, and manage their profiles.The system implements RESTful APIs, role-based access control, and secure data handling. Job Hire is built with scalability and maintainability in mind, following clean code practices and a modular architecture. The project demonstrates full-stack development skills, including frontend UI development, backend API design, database management, and system integration. github: https://github.com/mrfachri19/job-hire",
-      thumbnail: jobHire1,
-      images: [jobHire1, jobHire2, jobHire3, jobHire4],
+      description: "...",
+      thumbnail: "/assets/jobhire-login.png",
+      images: [
+        "/assets/jobhire-login.png",
+        "/assets/jobhire2.png",
+        "/assets/jobhire3.png",
+        "/assets/jobhire4.png",
+      ],
     },
     {
       name: "ZWallet",
       tech: "Next.js, Express, Mysql",
-      description:
-        "WalletApp is a financial management and digital wallet application built using Next.js, Express.js, and MySQL. The application enables users to securely send and receive funds, manage their wallet balance, and view detailed transaction histories in real time. The system is designed with a user-friendly interface and a structured backend architecture, implementing RESTful APIs to handle financial transactions efficiently and securely. WalletApp demonstrates full-stack development capabilities, including frontend development with Next.js, backend API development with Express.js, and relational database management using MySQL. GitHub: https://github.com/mrfachri19/Zwallet",
-      thumbnail: zwallet,
-      images: [zwallet, zwallet1, zwallet2, zwallet3],
+      description: "...",
+      thumbnail: "/assets/zwallet.png",
+      images: [
+        "/assets/zwallet.png",
+        "/assets/zwallet1.png",
+        "/assets/zwallet2.png",
+        "/assets/zwallet3.png",
+      ],
     },
     {
       name: "Market Place Olahx",
-      tech: "React, Typscript",
-      description:
-        "Market Place Olahx is a responsive marketplace web application developed using React and TypeScript. The application is designed to showcase products and projects through a clean, modern, and mobile-friendly user interface. The project focuses on frontend architecture, component reusability, and responsive design to ensure a consistent user experience across desktop and mobile devices. It demonstrates the use of TypeScript for better type safety, maintainability, and scalable frontend development. Tech Stack: React, TypeScript GitHub: https://github.com/mrfachri19/marketplace Live Demo: https://marketplace-one-black.vercel.app/",
-      thumbnail: olahx,
-      images: [olahx],
+      tech: "React, TypeScript",
+      description: "...",
+      thumbnail: "/assets/olahx.png",
+      images: ["/assets/olahx.png"],
     },
     {
       name: "StayEase",
-      tech: "React, Typscript",
-      description:
-        "StayEase is a responsive web application developed using React and TypeScript, designed to showcase accommodation or property listings through a clean and modern user interface. The application focuses on delivering a smooth and consistent user experience across desktop and mobile devices. The project emphasizes frontend best practices such as component reusability, structured layout design, and responsive UI implementation. TypeScript is used to improve code quality, maintainability, and scalability of the application. Tech Stack: React, TypeScript GitHub: https://github.com/mrfachri19/stayease Live Demo: https://stayease-zeta.vercel.app/",
-      thumbnail: stayease,
-      images: [stayease],
+      tech: "React, TypeScript",
+      description: "...",
+      thumbnail: "/assets/stayease.png",
+      images: ["/assets/stayease.png"],
     },
     {
       name: "Filo apps",
-      tech: "Filutter, laravel, Mysql",
-      description:
-        "Filo Apps is a mobile application developed using Flutter with a backend system built on Laravel and MySQL. The application is designed to deliver a smooth and responsive mobile user experience, supported by a reliable and structured backend API. The project demonstrates end-to-end application development, covering mobile UI implementation, backend API integration, and relational database management. Laravel is used to handle business logic and RESTful API services, while MySQL manages structured application data. Filo Apps highlights the integration between mobile and backend systems in a scalable and maintainable architecture. Tech Stack: Flutter, Laravel, MySQL",
-      thumbnail: filo1,
-      images: [filo, filo1, filo2, filo3],
+      tech: "Flutter, Laravel, Mysql",
+      description: "...",
+      thumbnail: "/assets/filo1.jpeg",
+      images: [
+        "/assets/filo.jpeg",
+        "/assets/filo1.jpeg",
+        "/assets/filo2.jpeg",
+        "/assets/filo3.jpeg",
+      ],
     },
   ];
 
@@ -128,7 +123,7 @@ export default function PortfolioResume() {
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="w-32 h-32 rounded-full overflow-hidden bg-white flex items-center justify-center">
               <img
-                src={logo}
+                src={"/assets/logo.png"}
                 alt="Profile Logo"
                 className="w-full h-full object-cover"
               />
